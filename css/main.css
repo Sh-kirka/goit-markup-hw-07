@@ -11,14 +11,14 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: $primary-font;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: $primary-text-color;
+  color: #757575;
   text-decoration: none;
 }
 
 a.link.current {
-  color: $accent-color;
+  color: #2196f3;
 }
 
 h1 {
@@ -35,6 +35,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link:focus, .link:hover {
+  color: #2196f3;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -43,11 +47,6 @@ img {
 
 p {
   margin: 0;
-}
-
-.link:hover,
-.link:focus {
-  color: $accent-color;
 }
 
 .container {
@@ -87,13 +86,13 @@ p {
   height: 581px;
   display: flex;
   flex-direction: column;
-  background-color: $primary-white-color;
+  background-color: #ffffff;
   border-radius: 4px;
   padding: 40px;
 }
 
 .modal-form-title {
-  font-family: $primary-font;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -102,7 +101,7 @@ p {
   letter-spacing: 0.03em;
   margin: 0px;
   margin-bottom: 30px;
-  color: $secondary-text-color;
+  color: #212121;
 }
 
 .modal-form-input-wrapper {
@@ -127,7 +126,7 @@ p {
 .modal-form-input {
   display: block;
   width: 100%;
-  font-family: $primary-font;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -142,13 +141,13 @@ p {
 .modal-form-input.text:hover + .modal-form-message-label,
 .modal-form-input.text:not(:placeholder-shown) + .modal-form-message-label {
   transform: translateY(-32px) translateX(0px);
-  color: $accent-color;
+  color: #2196f3;
 }
 
 .modal-form-input:focus,
 .modal-form-input:not(:placeholder-shown) {
   outline: none;
-  border-color: $accent-color;
+  border-color: #2196f3;
 }
 
 .modal-form-message:focus + .modal-form-message-label,
@@ -161,12 +160,7 @@ p {
 }
 
 .modal-form-message:focus + .modal-form-message-label {
-  color: $accent-color;
-  outline: none;
-}
-
-.modal-form-message:focus {
-  border-color: $accent-color;
+  color: #2196f3;
   outline: none;
 }
 
@@ -177,6 +171,11 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
+}
+
+.modal-form-message:focus {
+  border-color: #2196f3;
+  outline: none;
 }
 
 .modal-form-input .text {
@@ -199,7 +198,7 @@ p {
   display: inline-block;
   width: 16px;
   height: 16px;
-  fill: $secondary-text-color;
+  fill: #212121;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -208,8 +207,8 @@ p {
   top: 50%;
   left: 42px;
   transform: translateY(-50%);
-  font-family: $primary-font;
-  color: $primary-text-color;
+  font-family: "Roboto", sans-serif;
+  color: #757575;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -222,13 +221,13 @@ p {
 .modal-form-input:hover + .modal-form-label,
 .modal-form-input:not(:placeholder-shown) + .modal-form-label {
   transform: translateY(-38px) translateX(-28px);
-  color: $accent-color;
+  color: #2196f3;
 }
 
 .modal-form-input:focus ~ .modal-form-svg,
 .modal-form-input:hover ~ .modal-form-svg,
 .modal-form-input:not(:placeholder-shown) ~ .modal-form-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 .modal-form-checkbox {
@@ -253,7 +252,7 @@ p {
   height: 15px;
   margin-left: 12px;
   display: inline-block;
-  border: 2px solid $secondary-text-color;
+  border: 2px solid #212121;
   border-radius: 2px;
 }
 
@@ -267,30 +266,30 @@ p {
 .modal-form-option-consent {
   font-size: 12px;
   margin-left: 9px;
-  font-family: $primary-font;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: $primary-text-color;
+  color: #757575;
 }
 
 .modal-form-option-consent a {
-  color: $accent-color;
+  color: #2196f3;
 }
 
 .modal-form-checkbox:checked + .modal-form-custom-checkbox {
-  background-color: $accent-color;
+  background-color: #2196f3;
   background-image: url(../images/icons/check.svg);
   background-position: 50% 50%;
-  border: 2px solid $accent-color;
+  border: 2px solid #2196f3;
   border-radius: 2px;
 }
 
 .modal-close-button:focus .modal-close-button-svg,
 .modal-close-button:hover .modal-close-button-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 .modal-form-button {
@@ -298,23 +297,22 @@ p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: $accent-color;
-  color: $primary-white-color;
+  background-color: #2196f3;
+  color: #ffffff;
   padding: 10px 32px 10px 32px;
   margin: auto;
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  border-color: $accent-color;
+  border-color: #2196f3;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 30px;
 }
 
-.modal-form-button:hover,
-.modal-form-button:focus {
-  background-color: $modal-theme-color;
+.modal-form-button:focus, .modal-form-button:hover {
+  background-color: #188ce8;
 }
 
 .modal-close-button-svg {
@@ -323,7 +321,7 @@ p {
   justify-content: center;
   width: 11px;
   height: 11px;
-  fill: $secondary-text-color;
+  fill: #212121;
 }
 
 .modal-close-button {
@@ -352,6 +350,16 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.social-list:not(:last-child) {
+  margin-right: 10px;
+}
+
 /*HEADER*/
 .header .container {
   display: flex;
@@ -376,8 +384,17 @@ p {
   display: flex;
 }
 
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
+.navigation-list .link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.navigation-list .link:focus, .navigation-list .link:hover {
+  color: #2196f3;
 }
 
 .navigation-list-item {
@@ -386,9 +403,13 @@ p {
   padding-bottom: 32px;
 }
 
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .logo {
-  font-family: $secondary-font;
-  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+  color: #2196f3;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -400,22 +421,8 @@ p {
   margin-right: 87px;
 }
 
-.navigation-list .link {
-  color: $secondary-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-
-.navigation-list .link:hover,
-.navigation-list .link:focus {
-  color: $accent-color;
-}
-
 a.link.current {
-  color: $accent-color;
+  color: #2196f3;
 }
 
 a.link.current::after {
@@ -424,7 +431,7 @@ a.link.current::after {
   position: absolute;
   width: 100%;
   height: 4px;
-  background: $accent-color;
+  background: #2196f3;
   border-radius: 2px;
   margin-top: 28px;
   margin-left: auto;
@@ -438,7 +445,7 @@ a.link.current::after {
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  color: $primary-text-color;
+  color: #757575;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -450,24 +457,24 @@ a.link.current::after {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-  fill: $primary-text-color;
+  fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address:hover .header-mail-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 .header-address:hover .header-tel-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 .link:focus .header-tel-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 .link:focus .header-mail-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 /*HERO СЕКЦИЯ*/
@@ -483,14 +490,14 @@ a.link.current::after {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: $primary-white-color;
+  color: #ffffff;
   margin-bottom: 30px;
   padding-top: 200px;
 }
 
 .modal-button {
-  color: $primary-white-color;
-  background-color: $accent-color;
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: block;
@@ -513,12 +520,7 @@ a.link.current::after {
 .block {
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url("../images/main/Header.jpg");
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/main/Header.jpg");
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
@@ -534,18 +536,18 @@ a.link.current::after {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: $secondary-text-color;
+  color: #212121;
   padding-bottom: 10px;
   padding-top: 30px;
   margin: 0;
 }
 
-.about-us-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .about-us-list-item {
   display: block;
+}
+
+.about-us-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .about-us-list-back::before {
@@ -593,15 +595,11 @@ a.link.current::after {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: $secondary-text-color;
+  color: #212121;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-/*.whatawedoing-item {
-  position: relative;
-  text-align: center;
-}*/
 .background-text {
   position: relative;
   text-align: center;
@@ -619,7 +617,7 @@ a.link.current::after {
   text-align: center;
   justify-content: center;
   text-transform: uppercase;
-  color: $primary-white-color;
+  color: #ffffff;
   width: 370px;
   height: 70px;
   margin: 0;
@@ -639,6 +637,11 @@ a.link.current::after {
 /* Наша команда  */
 .grey-section {
   background: #f5f4fa;
+  background-color: #f5f4fa;
+}
+
+.grey-section .container {
+  padding-top: 94px;
 }
 
 .name-title {
@@ -646,15 +649,7 @@ a.link.current::after {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: $secondary-text-color;
-}
-
-.grey-section .container {
-  padding-top: 94px;
-}
-
-.grey-section {
-  background-color: #f5f4fa;
+  color: #212121;
 }
 
 .text-description {
@@ -670,34 +665,6 @@ a.link.current::after {
   padding-top: 50px;
 }
 
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list-item {
-  background-color: $primary-white-color;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
-  padding-bottom: 24px;
-}
-
-.name-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.social-list {
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-}
-
-.social-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-
 .team-list .social-list-item-link {
   display: flex;
   width: 44px;
@@ -709,6 +676,10 @@ a.link.current::after {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-list .social-list-item-link:focus, .team-list .social-list-item-link:hover {
+  background: #2196f3;
+}
+
 .team-list .social-list-item-link-svg {
   width: 20px;
   height: 20px;
@@ -716,9 +687,21 @@ a.link.current::after {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-list .social-list-item-link:hover,
-.team-list .social-list-item-link:focus {
-  background: $accent-color;
+.team-list-item {
+  background-color: #ffffff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  padding-bottom: 24px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.name-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /* Постоянные клиенты  */
@@ -734,6 +717,10 @@ a.link.current::after {
   margin-right: 30px;
 }
 
+.client-list-item:hover {
+  border-color: #2196f3;
+}
+
 .client-list-item .link {
   width: 170px;
   height: 90px;
@@ -746,21 +733,17 @@ a.link.current::after {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-list-item:hover {
-  border-color: $accent-color;
-}
-
 .client-list-item:hover .client-list-item-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 .link:focus .client-list-item-svg {
-  fill: $accent-color;
+  fill: #2196f3;
 }
 
 .client-list-item-link:hover {
-  border-color: $accent-color;
-  color: $accent-color;
+  border-color: #2196f3;
+  color: #2196f3;
 }
 
 .client-list-item-svg {
@@ -773,27 +756,13 @@ a.link.current::after {
 }
 
 .client-list .link:focus {
-  border-color: $accent-color;
+  border-color: #2196f3;
 }
 
 /* Футер */
 .footer {
   background: #2f303a;
   height: 252px;
-}
-
-.footer-addres-join-wrapper {
-  display: flex;
-}
-
-.logo .footer {
-  color: $primary-white-color;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.footer-logo-address {
-  margin-top: 60px;
 }
 
 .footer .title {
@@ -803,7 +772,21 @@ a.link.current::after {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $primary-white-color;
+  color: #ffffff;
+}
+
+.footer-addres-join-wrapper {
+  display: flex;
+}
+
+.logo .footer {
+  color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.footer-logo-address {
+  margin-top: 60px;
 }
 
 .footer-address-item {
@@ -812,7 +795,7 @@ a.link.current::after {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: $primary-white-color;
+  color: #ffffff;
   margin-top: 20px;
 }
 
@@ -850,15 +833,14 @@ a.link.current::after {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.join .social-list-item-link:focus, .join .social-list-item-link:hover {
+  background: #2196f3;
+}
+
 .join .social-list-item-link-svg {
   width: 20px;
   height: 20px;
   fill: white;
-}
-
-.join .social-list-item-link:hover,
-.join .social-list-item-link:focus {
-  background: $accent-color;
 }
 
 .social-list-item-link:hover .social-list-item-link-svg,
@@ -878,7 +860,7 @@ a.link.current::after {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: $primary-white-color;
+  color: #ffffff;
 }
 
 .footer-subscribe-wrapper-form {
@@ -918,8 +900,8 @@ a.link.current::after {
   height: 50px;
   margin-left: 12px;
   padding-left: 29px;
-  color: $primary-white-color;
-  background-color: $accent-color;
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
@@ -934,6 +916,6 @@ a.link.current::after {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  fill: $primary-white-color;
+  fill: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

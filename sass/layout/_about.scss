@@ -2,21 +2,22 @@
 .about-us-list {
   display: flex;
   margin: 0;
-}
-.about-us-list .title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: $secondary-text-color;
-  padding-bottom: 10px;
-  padding-top: 30px;
-  margin: 0;
-}
-.about-us-list-item:not(:last-child) {
-  margin-right: 30px;
+  .title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    margin: 0;
+  }
 }
 .about-us-list-item {
   display: block;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .about-us-list-back::before {
   width: 270px;

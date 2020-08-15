@@ -17,14 +17,27 @@
 }
 .navigation-list {
   display: flex;
-}
-.navigation-list-item:not(:last-child) {
-  margin-right: 50px;
+  .link {
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      color: $accent-color;
+    }
+  }
 }
 .navigation-list-item {
   position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 .logo {
   font-family: $secondary-font;
@@ -33,22 +46,11 @@
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-}
-.logo .header {
-  color: #000000;
-  margin-right: 87px;
-}
-.navigation-list .link {
-  color: $secondary-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-.navigation-list .link:hover,
-.navigation-list .link:focus {
-  color: $accent-color;
+
+  .header {
+    color: #000000;
+    margin-right: 87px;
+  }
 }
 a.link.current {
   color: $accent-color;

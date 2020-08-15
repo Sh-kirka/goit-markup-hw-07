@@ -88,10 +88,6 @@
   color: $accent-color;
   outline: none;
 }
-.modal-form-message:focus {
-  border-color: $accent-color;
-  outline: none;
-}
 .modal-form-message {
   height: 120px;
   resize: none;
@@ -99,6 +95,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
+
+  &:focus {
+    border-color: $accent-color;
+    outline: none;
+  }
 }
 .modal-form-input .text {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -218,10 +219,11 @@
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 30px;
-}
-.modal-form-button:hover,
-.modal-form-button:focus {
-  background-color: $modal-theme-color;
+
+  &:focus,
+  &:hover {
+    background-color: $modal-theme-color;
+  }
 }
 .modal-close-button-svg {
   position: absolute;
