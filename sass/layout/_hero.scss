@@ -1,0 +1,50 @@
+/*HERO СЕКЦИЯ*/
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+  padding-bottom: 0;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+.modal-button {
+  color: $primary-white-color;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: block;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  border-width: 0px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.block {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/main/Header.jpg");
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,44 @@
+/*Чем мы занимаемся*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $secondary-text-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*.whatawedoing-item {
+  position: relative;
+  text-align: center;
+}*/
+.background-text {
+  position: relative;
+  text-align: center;
+}
+.whatawedoing-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  width: 370px;
+  height: 70px;
+  margin: 0;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+}
+
+.whatawedoing {
+  display: flex;
+  padding-top: 50px;
+}
+.whatawedoing-item:not(:last-child) {
+  margin-right: 30px;
+}
