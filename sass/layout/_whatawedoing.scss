@@ -1,7 +1,6 @@
 /*Чем мы занимаемся*/
 .section-title {
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 700, 1.17);
   text-align: center;
   color: $secondary-text-color;
   margin-top: 0px;
@@ -20,9 +19,7 @@
     left: 0;
     bottom: 0;
     display: flex;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 700, 1.14);
     letter-spacing: 0.03em;
     text-align: center;
     justify-content: center;

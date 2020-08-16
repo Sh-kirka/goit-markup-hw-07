@@ -4,9 +4,7 @@
   height: 252px;
   .title {
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    @include font(14px, 700, 1.14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-white-color;
@@ -25,9 +23,7 @@
 }
 .footer-address-item {
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 400, 1.71);
   letter-spacing: 0.03em;
   color: $primary-white-color;
   margin-top: 20px;
@@ -35,9 +31,7 @@
 .footer-mail,
 .footer-tel {
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.33;
+  @include font(14px, 500, 1.33);
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 9px;
@@ -51,14 +45,13 @@
   .social-list {
     margin-top: 20px;
   }
+
   .social-list-item-link {
-    display: flex;
+    @include flex-center(flex, center, center);
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    justify-content: center;
-    align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
     &:hover {

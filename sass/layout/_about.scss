@@ -3,8 +3,7 @@
   display: flex;
   margin: 0;
   .title {
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 0);
     text-transform: uppercase;
     color: $secondary-text-color;
     padding-bottom: 10px;
@@ -12,8 +11,7 @@
     margin: 0;
   }
   &-text {
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(14px, 0, 1.71);
     letter-spacing: 0.03em;
   }
 }

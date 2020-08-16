@@ -15,9 +15,7 @@
   .link {
     width: 170px;
     height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center(flex, center, center);
     border: 1px solid #afb1b8;
     box-sizing: border-box;
     border-radius: 4px;

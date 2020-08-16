@@ -15,9 +15,7 @@
   display: block;
   border-width: 0px;
   border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
+  @include font(16px, 500, 1.63);
   cursor: pointer;
   &:focus,
   &:hover {

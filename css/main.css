@@ -13,6 +13,8 @@ body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
   color: #757575;
   text-decoration: none;
 }
@@ -94,9 +96,9 @@ p {
 .modal-form-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  font-weight: 700;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0px;
@@ -116,24 +118,24 @@ p {
   width: 100%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 500;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
 }
 
+.modal-form-input::placeholder {
+  color: transparent;
+  transition: color 250ms linear 250ms;
+}
+
 .modal-form-input .text {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-}
-
-.modal-form-input::placeholder {
-  color: transparent;
-  transition: color 250ms linear 250ms;
 }
 
 .modal-form-input:focus::placeholder {
@@ -156,8 +158,8 @@ p {
 .modal-form-message:focus + .modal-form-message-label,
 .modal-form-message:not(:placeholder-shown) + .modal-form-message-label {
   outline: none;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
@@ -208,10 +210,10 @@ p {
   transform: translateY(-50%);
   font-family: "Roboto", sans-serif;
   color: #757575;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 400;
+  line-height: 1.14;
+  font-style: normal;
   letter-spacing: 0.01em;
   transition: transform 250ms linear;
 }
@@ -258,13 +260,12 @@ p {
 }
 
 .modal-form-option-consent {
-  font-size: 12px;
   margin-left: 9px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  font-weight: 400;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -287,8 +288,8 @@ p {
 }
 
 .modal-form-button {
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: #2196f3;
@@ -323,12 +324,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   -webkit-transition-duration: 250ms;
   transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -339,6 +340,7 @@ p {
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 11px;
   height: 11px;
   fill: #212121;
@@ -347,6 +349,7 @@ p {
 .social-list {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-left: 0;
 }
 
@@ -354,11 +357,19 @@ p {
   margin-right: 10px;
 }
 
+.social-list-item {
+  padding-left: 0;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /*HEADER*/
 .header .container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-utils {
@@ -371,6 +382,7 @@ p {
 
 .navigation {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -380,8 +392,8 @@ p {
 
 .navigation-list .link {
   color: #212121;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -404,8 +416,8 @@ p {
 .logo {
   font-family: "Raleway", sans-serif;
   color: #2196f3;
-  font-weight: bold;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
 }
@@ -434,22 +446,22 @@ a.link.current::after {
 
 .header-mail,
 .header-tel {
-  font-style: normal;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.33;
+  font-style: normal;
   letter-spacing: 0.02em;
   color: #757575;
-  align-items: center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-mail-svg,
 .header-tel-svg {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-right: 10px;
   fill: #757575;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -471,24 +483,6 @@ a.link.current::after {
   fill: #2196f3;
 }
 
-/*HERO СЕКЦИЯ*/
-.hero {
-  text-align: center;
-  margin-bottom: 94px;
-  padding-bottom: 0;
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 30px;
-  padding-top: 200px;
-}
-
 .modal-button {
   color: #ffffff;
   background-color: #2196f3;
@@ -503,12 +497,30 @@ a.link.current::after {
   margin-left: auto;
   border-width: 0px;
   border-radius: 4px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+/*HERO СЕКЦИЯ*/
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+  padding-bottom: 0;
+}
+
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 .block {
@@ -528,6 +540,7 @@ a.link.current::after {
 
 .about-us-list .title {
   font-size: 14px;
+  font-weight: 0;
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
@@ -538,6 +551,7 @@ a.link.current::after {
 
 .about-us-list-text {
   font-size: 14px;
+  font-weight: 0;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -587,6 +601,7 @@ a.link.current::after {
 /*Чем мы занимаемся*/
 .section-title {
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   color: #212121;
@@ -609,8 +624,8 @@ a.link.current::after {
   left: 0;
   bottom: 0;
   display: flex;
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
@@ -639,8 +654,8 @@ a.link.current::after {
 }
 
 .name-title {
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   text-align: center;
   color: #212121;
@@ -650,6 +665,7 @@ a.link.current::after {
 
 .text-description {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.19;
   text-align: center;
   margin-bottom: 16px;
@@ -663,12 +679,12 @@ a.link.current::after {
 
 .team-list .social-list-item-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  justify-content: center;
-  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -758,9 +774,9 @@ a.link.current::after {
 
 .footer .title {
   font-style: normal;
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  font-weight: 700;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -782,8 +798,8 @@ a.link.current::after {
 
 .footer-address-item {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -793,8 +809,8 @@ a.link.current::after {
 .footer-mail,
 .footer-tel {
   font-style: normal;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
@@ -815,12 +831,12 @@ a.link.current::after {
 
 .join .social-list-item-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  justify-content: center;
-  align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -846,8 +862,8 @@ a.link.current::after {
 }
 
 .footer-text-subscribe {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -856,10 +872,6 @@ a.link.current::after {
 
 .footer-subscribe-wrapper-form {
   margin-top: 20px;
-}
-
-.footer-form-subscribe {
-  display: flex;
 }
 
 .footer-subscribe-wrapper-form input {
@@ -876,28 +888,33 @@ a.link.current::after {
   background-color: #2f303a;
 }
 
-.footer-form-subscribe input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+.footer-form-subscribe {
+  display: flex;
 }
 
 .footer-form-subscribe input {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-form-subscribe input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-subscribe-button {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 200px;
   height: 50px;
   margin-left: 12px;
-  padding-left: 29px;
+  padding: 0;
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
 }

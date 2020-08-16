@@ -9,7 +9,7 @@ html {
 body {
   background-color: #ffffff;
   font-family: $primary-font;
-  font-size: 14px;
+  @include font($fs: 14px);
   color: $primary-text-color;
   text-decoration: none;
 }
