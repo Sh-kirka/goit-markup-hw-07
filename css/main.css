@@ -112,18 +112,6 @@ p {
 .modal-form-input {
   height: 40px;
   padding-left: 42px;
-}
-
-.modal-form-input::placeholder {
-  color: transparent;
-  transition: color 250ms linear 250ms;
-}
-
-.modal-form-input:focus::placeholder {
-  color: #000000;
-}
-
-.modal-form-input {
   display: block;
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -135,6 +123,21 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
+}
+
+.modal-form-input .text {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-form-input::placeholder {
+  color: transparent;
+  transition: color 250ms linear 250ms;
+}
+
+.modal-form-input:focus::placeholder {
+  color: #000000;
 }
 
 .modal-form-input.text:focus + .modal-form-message-label,
@@ -171,17 +174,13 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 28px;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .modal-form-message:focus {
   border-color: #2196f3;
   outline: none;
-}
-
-.modal-form-input .text {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .modal-form-message-label {
@@ -239,11 +238,6 @@ p {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.modal-form-message {
-  align-items: center;
-  margin-bottom: 30px;
 }
 
 .modal-form-custom-checkbox {
@@ -315,15 +309,6 @@ p {
   background-color: #188ce8;
 }
 
-.modal-close-button-svg {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 11px;
-  height: 11px;
-  fill: #212121;
-}
-
 .modal-close-button {
   position: absolute;
   top: 8px;
@@ -348,6 +333,15 @@ p {
   transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button-svg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 11px;
+  height: 11px;
+  fill: #212121;
 }
 
 .social-list {
@@ -542,6 +536,12 @@ a.link.current::after {
   margin: 0;
 }
 
+.about-us-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .about-us-list-item {
   display: block;
 }
@@ -584,12 +584,6 @@ a.link.current::after {
   background-image: url(../images/icons/astronaut1.svg);
 }
 
-.about-us-list-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
 /*Чем мы занимаемся*/
 .section-title {
   font-size: 36px;
@@ -603,6 +597,11 @@ a.link.current::after {
 .background-text {
   position: relative;
   text-align: center;
+}
+
+.whatawedoing {
+  display: flex;
+  padding-top: 50px;
 }
 
 .whatawedoing-title {
@@ -625,11 +624,6 @@ a.link.current::after {
   padding-top: 27px;
 }
 
-.whatawedoing {
-  display: flex;
-  padding-top: 50px;
-}
-
 .whatawedoing-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -650,6 +644,8 @@ a.link.current::after {
   line-height: 1.19;
   text-align: center;
   color: #212121;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .text-description {
@@ -697,11 +693,6 @@ a.link.current::after {
 
 .team-list-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.name-title {
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 /* Постоянные клиенты  */

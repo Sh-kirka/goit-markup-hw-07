@@ -11,6 +11,11 @@
     padding-top: 30px;
     margin: 0;
   }
+  &-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 .about-us-list-item {
   display: block;
@@ -47,9 +52,4 @@
 }
 .astronaut-icon::before {
   background-image: url(../images/icons/astronaut1.svg);
-}
-.about-us-list-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }

@@ -3,17 +3,19 @@
   text-align: center;
   margin-bottom: 94px;
   padding-bottom: 0;
+
+  &-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-bottom: 30px;
+    padding-top: 200px;
+  }
 }
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $primary-white-color;
-  margin-bottom: 30px;
-  padding-top: 200px;
-}
+
 .modal-button {
   color: $primary-white-color;
   background-color: $accent-color;
