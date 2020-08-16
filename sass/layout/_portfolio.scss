@@ -11,7 +11,7 @@
     color: $secondary-text-color;
   }
   .text-description {
-    @include font(16px, 700, 1.87);
+    @include font(16px, 400, 1.87);
     color: $primary-text-color;
   }
   .hover-text-portfolio-list {
