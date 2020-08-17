@@ -16,6 +16,8 @@
 
 .block {
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   height: 600px;
   background-image: linear-gradient(
       to bottom,
@@ -24,6 +26,6 @@
     ),
     url("../images/main/Header.jpg");
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
+  background-size: cover;
+  background-position: center;
 }
