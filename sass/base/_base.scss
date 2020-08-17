@@ -12,6 +12,7 @@ body {
   @include font($fs: 14px);
   color: $primary-text-color;
   text-decoration: none;
+  margin: 0;
 }
 a.link.current {
   color: $accent-color;
