@@ -63,6 +63,12 @@ img {
   padding-bottom: 94px;
 }
 
+@media (max-width: 767px) {
+  .what {
+    display: none;
+  }
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -95,6 +101,33 @@ img {
 
 .header-mail {
   margin-right: 50px;
+}
+
+.nav-menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border: 0;
+  border-color: transparent;
+}
+
+.nav-menu-button .icon-menu-svg {
+  display: none;
+}
+
+.nav-menu-button.is-open .icon-menu-svg {
+  display: block;
+}
+
+.nav-menu-button.is-open .icon-cross-svg {
+  display: none;
+}
+
+.icon-cross-svg,
+.icon-menu-svg {
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation {

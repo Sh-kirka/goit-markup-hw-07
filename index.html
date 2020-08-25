@@ -29,7 +29,13 @@
               <a class="link" href="">Контакты</a>
             </li>
           </ul>
-        </nav>
+         <button type="button" class="nav-menu-button is-open" aria-expanded="false" data-menu-button>
+           <svg width="40" height="40" aria-label="Перключатель для мобильного меню">
+          <use class="icon-menu-svg" href="./images/icons/sprite.svg#icon-menu_24px"></use>
+         <use class="icon-cross-svg" href="./images/icons/sprite.svg#icon-close_24px"></use>
+          </svg>
+         </button>
+           </nav>
         <ul class="header-utils list">
           <li class="header-address">
             <a class="header-mail link" href="mailto:info@devstudio.com">
@@ -107,7 +113,7 @@
         </div>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="section">
+      <section class="section what">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="whatawedoing list">
@@ -616,6 +622,7 @@
   </form>
 </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 
   </body>
 </html>
