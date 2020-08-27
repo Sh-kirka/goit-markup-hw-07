@@ -10,7 +10,8 @@ body,
 p,
 h1,
 h2,
-h3 {
+h3,
+img {
   margin: 0;
 }
 body {
@@ -19,6 +20,9 @@ body {
   @include font($fs: 14px);
   color: $primary-text-color;
   text-decoration: none;
+}
+body.modal-open {
+  overflow: hidden;
 }
 a.link.current {
   color: $accent-color;

@@ -1,20 +1,12 @@
-/* форма футера */
-.footer-subscribe-wrapper {
-  margin-left: 94px;
-  margin-top: 72px;
-}
-
+/* ФУТЕР-форма */
 .footer-text-subscribe {
   @include font(14px, 700, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-white-color;
 }
-.footer-subscribe-wrapper-form {
-  margin-top: 20px;
-
+.footer-form-subscribe {
   input {
-    width: 358px;
     height: 50px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -30,6 +22,9 @@
 }
 .footer-form-subscribe {
   display: flex;
+  margin-top: 20px;
+  width: 100%;
+
   input {
     color: rgba(255, 255, 255, 0.6);
     &::placeholder {
@@ -37,12 +32,21 @@
     }
   }
 }
-
+.email {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+}
 .footer-subscribe-button {
   @include flex-center(flex, center, center);
   width: 200px;
   height: 50px;
-  margin-left: 12px;
   padding: 0;
   color: $primary-white-color;
   background-color: $accent-color;
@@ -58,4 +62,10 @@
   height: 24px;
   margin-left: 10px;
   fill: $primary-white-color;
+}
+@media screen and (min-width: 1200px) {
+  .email {
+    width: 358px;
+    margin-right: 12px;
+  }
 }

@@ -1,9 +1,8 @@
 /*О НАС*/
 .about-us-list {
-  display: flex;
   margin: 0;
   .title {
-    @include font(14px, 0);
+    @include font(14px, 700);
     text-transform: uppercase;
     color: $secondary-text-color;
     padding-bottom: 10px;
@@ -11,19 +10,15 @@
     margin: 0;
   }
   &-text {
-    @include font(14px, 0, 1.71);
+    @include font(14px, 400, 1.71);
     letter-spacing: 0.03em;
   }
 }
 .about-us-list-item {
   display: block;
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 .about-us-list-back::before {
-  width: 270px;
+  width: 100%;
   height: 120px;
   left: 515px;
   top: 774px;
@@ -50,4 +45,46 @@
 }
 .astronaut-icon::before {
   background-image: url(../images/icons/astronaut1.svg);
+}
+@media screen and (max-width: 767px) {
+  .about-us {
+    padding-bottom: 60px;
+
+    &-list-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .title {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    padding-bottom: 60px;
+  }
+  .about-us-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about-us-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .about-us-list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-top: 94px;
+
+    &-list-item {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  .about-us-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }

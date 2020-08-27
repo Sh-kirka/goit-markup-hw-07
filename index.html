@@ -11,57 +11,59 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- ГЛАВНОЕ МЕНЮ -->
-    <header class="header container">
-      <div class="nav">
-        <nav class="navigation">
-          <a class="logo" href="./index.html"
-            ><span>Web</span> <span class="header"> Studio</span></a
+<!-- ГЛАВНОЕ МЕНЮ -->
+    <header class="header">
+      <div class="header-container container">
+          <a class="logo-header link" href="./index.html"
+            ><span class="logo-web">Web</span>Studio</a
           >
-          <ul class="navigation-list list">
+           <button type="button" class="nav-menu-button" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+            <svg width="40" height="40" aria-label="Перключатель для мобильного меню">
+             <use class="icon-menu-svg" href="./images/icons/sprite.svg#icon-menu_24px"></use>
+             <use class="icon-cross-svg" href="./images/icons/sprite.svg#icon-close_24px"></use>
+            </svg>
+           </button>
+          <div class="menu-wrapper" data-menu>
+           <nav class="navigation">
+           <ul class="navigation-list list">
             <li class="menu-item navigation-list-item">
-              <a class="link current" href="./index.html">Студия</a>
+              <a class="navigation-link link current" href="./index.html">Студия</a>
             </li>
             <li class="menu-item navigation-list-item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+              <a class="navigation-link link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu-item navigation-list-item">
-              <a class="link" href="">Контакты</a>
+              <a class="navigation-link link" href="">Контакты</a>
             </li>
-          </ul>
-         <button type="button" class="nav-menu-button is-open" aria-expanded="false" data-menu-button>
-           <svg width="40" height="40" aria-label="Перключатель для мобильного меню">
-          <use class="icon-menu-svg" href="./images/icons/sprite.svg#icon-menu_24px"></use>
-         <use class="icon-cross-svg" href="./images/icons/sprite.svg#icon-close_24px"></use>
-          </svg>
-         </button>
-           </nav>
-        <ul class="header-utils list">
-          <li class="header-address">
+           </ul>
+      </nav>
+           <ul class="header-contacts list">
+            <li class="header-contacts-address">
             <a class="header-mail link" href="mailto:info@devstudio.com">
-              <svg class="header-mail-svg" width="16px" height="12px">
+              <svg class="header-list-svg" width="16px" height="12px">
                 <use
                   href="./images/icons/sprite.svg#icon-envelope"
                 ></use>
               </svg>
               <adress>info@devstudio.com</adress></a
             >
-          </li>
-          <li class="header-address">
+            </li>
+            <li class="header-contacts-address">
             <a class="header-tel link" href="tel:+380961111111">
-              <svg class="header-tel-svg" width="10px" height="16px">
+              <svg class="header-list-svg" width="10px" height="16px">
                 <use
                   href="./images/icons/sprite.svg#icon-smartphone"
                 ></use>
               </svg>
               +38 096 111 11 11</a
             >
-          </li>
-        </ul>
+            </li>
+          </ul>
+      </div>
       </div>
     </header>
+<!-- HERO СЕКЦИЯ -->
     <main>
-      <!-- HERO СЕКЦИЯ -->
       <section class="hero section">
         <div class="block">
           <h1 class="hero-title">
@@ -71,8 +73,8 @@
           <button data-modal-open class="modal-button">Заказать услугу</button>
         </div>
       </section>
-      <!-- О НАС -->
-      <section class="section">
+<!-- О НАС -->
+      <section class="about-us section">
         <div class="container">
           <h2 hidden>О нас</h2>
           <ul class="about-us-list list">
@@ -112,7 +114,7 @@
           </ul>
         </div>
       </section>
-      <!-- Чем мы занимаемся -->
+<!-- Чем мы занимаемся -->
       <section class="section what">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
@@ -153,8 +155,7 @@
           </ul>
         </div>
       </section>
-
-      <!-- Наша команда -->
+<!-- Наша команда -->
       <section class="grey-section section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
@@ -411,7 +412,7 @@
           </ul>
         </div>
       </section>
-      <!-- Постоянные клиенты -->
+<!-- Постоянные клиенты -->
       <section class="client-section section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
@@ -486,18 +487,17 @@
         </div>
       </section>
     </main>
-    <!-- ФУТЕР -->
+<!-- ФУТЕР -->
     <footer class="footer">
       <div class="container">
-       <div class="footer-addres-join-wrapper">
         <div class="footer-logo-address">
-          <a class="logo" href="./index.html"
-            ><span>Web</span> <span class="footer"> Studio</span></a
+          <a class="logo-footer link" href="./index.html"
+            ><span class="logo-web">Web</span> <span class="footer"> Studio</span></a
           >
           <address class="footer-address-item">
                 г. Киев, пр-т Леси Украинки, 26
           </address>
-            <ul class="list">
+            <ul class="list footer-address-list">
               <li>
                 <a class="footer-mail link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
@@ -509,7 +509,7 @@
                 >
               </li>
             </ul>
-        </div>
+       </div>
         <div class="join">
           <b class="title">присоединяйтесь</b>
           <ul class="social-list list">
@@ -561,18 +561,17 @@
         </div>
           <div class="footer-subscribe-wrapper">
             <b class="footer-text-subscribe">Подпишитесь на рассылку</b>
-            <div class="footer-subscribe-wrapper-form" role="group">
+
               <form class="footer-form-subscribe">
-                <input type="email" placeholder="E-mail">
+                <input type="email" placeholder="E-mail" class="email">
                 <button class="footer-subscribe-button">Подписатся
                   <svg class="footer-subscribe-button-svg">
                     <use href="./images/icons/sprite.svg#icon-send"></use>
                   </svg>
                 </button>
               </form>
-            </div>
           </div>
-       </div>
+
       </div>
     </footer>
 
